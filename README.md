@@ -1,1 +1,1 @@
-# developerMarketplace-Angular2
+# DeveloperMarket-Angular2
