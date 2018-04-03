@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import {HttpService} from './http.service';
 import { HttpClientModule } from '@angular/common/http';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

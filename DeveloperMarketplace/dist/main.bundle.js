@@ -17,6 +17,56 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/aboutme/aboutme.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/aboutme/aboutme.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  aboutme works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/aboutme/aboutme.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var AboutmeComponent = /** @class */ (function () {
+    function AboutmeComponent() {
+    }
+    AboutmeComponent.prototype.ngOnInit = function () {
+    };
+    AboutmeComponent = __decorate([
+        core_1.Component({
+            selector: 'app-aboutme',
+            template: __webpack_require__("./src/app/aboutme/aboutme.component.html"),
+            styles: [__webpack_require__("./src/app/aboutme/aboutme.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], AboutmeComponent);
+    return AboutmeComponent;
+}());
+exports.AboutmeComponent = AboutmeComponent;
+
+
+/***/ }),
+
 /***/ "./src/app/app-routing.module.ts":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -112,6 +162,7 @@ var app_component_1 = __webpack_require__("./src/app/app.component.ts");
 var header_component_1 = __webpack_require__("./src/app/header/header.component.ts");
 var http_service_1 = __webpack_require__("./src/app/http.service.ts");
 var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+var aboutme_component_1 = __webpack_require__("./src/app/aboutme/aboutme.component.ts");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -119,7 +170,8 @@ var AppModule = /** @class */ (function () {
         core_1.NgModule({
             declarations: [
                 app_component_1.AppComponent,
-                header_component_1.HeaderComponent
+                header_component_1.HeaderComponent,
+                aboutme_component_1.AboutmeComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
@@ -141,14 +193,14 @@ exports.AppModule = AppModule;
 /***/ "./src/app/header/header.component.css":
 /***/ (function(module, exports) {
 
-module.exports = "#header {\n    width: 100%;\n    min-height: 100%;\n    height: 100%;\n    color: white;\n    margin: 0;\n    padding: 0;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    position: relative;\n    background-size: 100%;\n    background-size: cover;\n    background-color:rgba(255,255,255,0.2);\n    /* -ms-filter: \"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')\"; */\n    margin-bottom: 0px;\n    padding: 0px;\n  }"
+module.exports = ".jumbotron {\n  min-height: 500px;\n  margin-bottom: 0px;\n  background-image: url('GearFlagB.587576a6fc5c996a72ef.jpg');\n  background-size: cover;\n  background-repeat: no-repeat;\n  grey: white;\n  text-shadow: black 0.3em 0.3em 0.3em;\n}\n\n.title {\n  color: #feff00;\n  font-style: italic;\n  font-family: cursive;\n  font-size: 50px;\n  padding-top: 120px;\n  border-bottom: 1px solid #FFFFFF;\n  border-bottom-color: rgba(255,255,255,0.35);\n  display: inline-block;\n}\n\n.subtitle {\n  font-size: 28px;\n  color: #feff00;\n  font-style: italic;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  header works!\n</p>\n"
+module.exports = "<div class=\"jumbotron\">\n  <div class=\"text-center project-referal\">\n    <div class=\"title text-center\">John Haven Bradley</div>\n    <div class=\"subtitle\"><p>Fullstack Web and Mobile App Developer</p></div>\n  </div>\n</div>"
 
 /***/ }),
 
