@@ -5,19 +5,60 @@
     background-size: auto contain;
     position: top center;
     background-attachment: fixed;
+    min-height: 300px;
     /* background: no-repeat; */
     /* z-index: 3; */
 }
 .logo {
-    min-height: 300px; 
+    min-height: 490px; 
     min-width: 300px;
-    background-image: url('../../assets/300Logo.png');
+    background-image: url('../../assets/profilePNG.png');
     background-repeat: no-repeat;
     background-position: center;
     margin-top: -15px;
     top: 50%;
   }
+  .about-me {
+    background-position: center;
+    display: inline;
+  }
 .content {
-    background-color: #b8b8b8;
+    background-color: white;
     background-size: cover;
+    display: inline-block;
+}
+.about-me {
+    display: inline-block;
+    height: 500px;
+    background-size: cover;
+    background-size: auto contain;
+    position: top center;
+    background-attachment: fixed;
+    min-height: 300px;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 40px;
+}
+.pic2 {
+    display: inline-block;
+    min-height: 340px; 
+    min-width: 300px;
+    background-image: url('../../assets/profile2PNG.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-top: 45px;
+    top: 50%;
+}
+.content {
+    margin-top: -15px;
+    position: top center;
+    margin-top: 0%;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    display: inline-block;
+}
+div p {
+    font-size: 30px;
+    font-style: normal;
 }

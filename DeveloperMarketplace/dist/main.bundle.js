@@ -20,14 +20,14 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /***/ "./src/app/aboutme/aboutme.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".main-header {\n    background-image: url('CPUBackground.551bbe77ee6695c5887c.jpg');\n    height: 500px;\n    background-size: cover;\n    background-size: auto contain;\n    position: top center;\n    background-attachment: fixed;\n    /* background: no-repeat; */\n    /* z-index: 3; */\n}\n.logo {\n    min-height: 300px; \n    min-width: 300px;\n    background-image: url('300Logo.6aee8e28d88e7e08acbd.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    margin-top: -15px;\n    top: 50%;\n  }\n.content {\n    background-color: #b8b8b8;\n    background-size: cover;\n}"
+module.exports = ".main-header {\n    background-image: url('CPUBackground.551bbe77ee6695c5887c.jpg');\n    height: 500px;\n    background-size: cover;\n    background-size: auto contain;\n    position: top center;\n    background-attachment: fixed;\n    min-height: 300px;\n    /* background: no-repeat; */\n    /* z-index: 3; */\n}\n.logo {\n    min-height: 490px; \n    min-width: 300px;\n    background-image: url('profilePNG.dcbdd7da7a18ba62eba2.png');\n    background-repeat: no-repeat;\n    background-position: center;\n    margin-top: -15px;\n    top: 50%;\n  }\n.about-me {\n    background-position: center;\n    display: inline;\n  }\n.content {\n    background-color: white;\n    background-size: cover;\n    display: inline-block;\n}\n.about-me {\n    display: inline-block;\n    height: 500px;\n    background-size: cover;\n    background-size: auto contain;\n    position: top center;\n    background-attachment: fixed;\n    min-height: 300px;\n    font-style: italic;\n    font-family: cursive;\n    font-size: 40px;\n}\n.pic2 {\n    display: inline-block;\n    min-height: 340px; \n    min-width: 300px;\n    background-image: url('profile2PNG.32c7157a88b81dccc23c.png');\n    background-repeat: no-repeat;\n    background-position: top left;\n    margin-top: 45px;\n    top: 50%;\n}\n.content {\n    margin-top: -15px;\n    position: top center;\n    margin-top: 0%;\n    height: 100%;\n    width: 50%;\n    background-color: white;\n    display: inline-block;\n}\ndiv p {\n    font-size: 30px;\n    font-style: normal;\n}"
 
 /***/ }),
 
 /***/ "./src/app/aboutme/aboutme.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "  <header class=\"main-header\">\n  </header>\n\n  <div class=\"content\">\n    <section class=\"section-dark\">\n      <article class=\"my-story\">\n        <div class=\"logo\"></div>\n        <h1>Hi, I'm John</h1>\n        <hr>\n        <p>I am a freelance developer working in multiple front to back-end web frameworks as well as iOS mobile. I bring the communication skills, meticulous nature, and high-standard I learned as an Army Ranger Captain to each and every project to which I commit myself.</p>\n        <hr>\n      </article>\n    </section>\n\n      <section>\n        <article class=\"coding-fun\">\n          <h1>\"Here Are Some Of My Past Projects\"</h1>\n        </article>\n      </section>\n\n    <section>\n      <article class=\"youtube-videos\">\n        <h1>Youtube Videos</h1>\n        <div class=\"ui link cards\">\n          <div class=\"card\">\n              <link rel=\"stylesheet\" type=\"text/css\" href=\"semantic/dist/semantic.min.css\">\n              <script\n                src=\"https://code.jquery.com/jquery-3.1.1.min.js\"\n                integrity=\"sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=\"\n                crossorigin=\"anonymous\"></script>\n              <script src=\"semantic/dist/semantic.min.js\"></script>\n          </div>\n        </div>\n      </article>\n    </section>\n  </div>\n\n  \n  \n  \n  \n  <!-- <div class=\"section white\">\n    <div class=\"row container\">\n      <h2 class=\"header\">Parallax</h2>\n      <p class=\"grey-text text-darken-3 lighten-3\">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>\n    </div>\n  </div>\n  <div class=\"parallax-container\">\n    <div class=\"parallax\"><img src=\"../../assets/CPUBackground.jpg\"></div>\n  </div> -->\n\n  <!-- <nav class=\"white\">\n    <div class=\"nav-wrapper\">\n      <a *ngIf=\"wedding\" href=\"#\" class=\"page-title black-text\">{{wedding.name | uppercase}}</a>\n      <a materialize=\"sideNav\" [materializeParams]=\"sidenavParams\" [materializeActions]=\"sidenavActions\"\n      data-activates=\"nav-mobile\" class=\"button-collapse hide-on-large-only\">\n      <i class=\"material-icons grey-text\">menu</i>\n      </a>\n      <ul id=\"nav-mobile\" class=\"side-nav\">\n        <li>\n          <a><i class=\"material-icons\" (click)=\"close()\">close</i></a>\n        </li>\n        <li *ngFor=\"let menuItem of menuItems\" routerLinkActive=\"active\"><a class=\"black-text [routerLink]=\"menuItem.route\">{{ menuItem.name | uppercase }}</a></li>\n      </ul>\n      <ul id=\"nav-mobile\" class=\"side-nav\">\n        <li>\n          <a><i class=\"material-icons\" (click)=\"close()\">close</i></a>\n        </li>\n        <li *ngFor=\"menuItem of menuItems\" routerLinkActive=\"active\"><a class=\"black-text\" [routerLink]=\"menuItem.route\" (click)=\"close()\">{{menuITem.name | uppercase }}</a></li>\n        <div class=\"divider\">\n        </div>\n      </ul>\n    </div>\n  </nav>\n   -->"
+module.exports = "  <header class=\"main-header\">\n      <div class=\"logo\"></div>\n  </header>\n\n<div class=\"about-me\">\n  <div class=\"pic2\"></div>\n  <div class=\"content\">\n      <section class=\"section-dark\">\n          <article class=\"my-story\">\n            <h1>Hi, I'm John</h1>\n            <hr>\n            <p font-size:30px>I am a freelance developer working in multiple front to back-end web frameworks as well as iOS mobile. I bring the communication skills, meticulous nature, and high-standard I learned as an Army Ranger Captain to each and every project to which I commit myself.</p>\n            <hr>\n          </article>\n      </section>\n  </div>\n</div>\n\n  \n  \n  \n  \n  <!-- <div class=\"section white\">\n    <div class=\"row container\">\n      <h2 class=\"header\">Parallax</h2>\n      <p class=\"grey-text text-darken-3 lighten-3\">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>\n    </div>\n  </div>\n  <div class=\"parallax-container\">\n    <div class=\"parallax\"><img src=\"../../assets/CPUBackground.jpg\"></div>\n  </div> -->\n\n  <!-- <nav class=\"white\">\n    <div class=\"nav-wrapper\">\n      <a *ngIf=\"wedding\" href=\"#\" class=\"page-title black-text\">{{wedding.name | uppercase}}</a>\n      <a materialize=\"sideNav\" [materializeParams]=\"sidenavParams\" [materializeActions]=\"sidenavActions\"\n      data-activates=\"nav-mobile\" class=\"button-collapse hide-on-large-only\">\n      <i class=\"material-icons grey-text\">menu</i>\n      </a>\n      <ul id=\"nav-mobile\" class=\"side-nav\">\n        <li>\n          <a><i class=\"material-icons\" (click)=\"close()\">close</i></a>\n        </li>\n        <li *ngFor=\"let menuItem of menuItems\" routerLinkActive=\"active\"><a class=\"black-text [routerLink]=\"menuItem.route\">{{ menuItem.name | uppercase }}</a></li>\n      </ul>\n      <ul id=\"nav-mobile\" class=\"side-nav\">\n        <li>\n          <a><i class=\"material-icons\" (click)=\"close()\">close</i></a>\n        </li>\n        <li *ngFor=\"menuItem of menuItems\" routerLinkActive=\"active\"><a class=\"black-text\" [routerLink]=\"menuItem.route\" (click)=\"close()\">{{menuITem.name | uppercase }}</a></li>\n        <div class=\"divider\">\n        </div>\n      </ul>\n    </div>\n  </nav>\n   -->"
 
 /***/ }),
 
@@ -167,6 +167,8 @@ var header_component_1 = __webpack_require__("./src/app/header/header.component.
 var http_service_1 = __webpack_require__("./src/app/http.service.ts");
 var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var aboutme_component_1 = __webpack_require__("./src/app/aboutme/aboutme.component.ts");
+var resume_component_1 = __webpack_require__("./src/app/resume/resume.component.ts");
+var form_component_1 = __webpack_require__("./src/app/form/form.component.ts");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -175,7 +177,9 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 app_component_1.AppComponent,
                 header_component_1.HeaderComponent,
-                aboutme_component_1.AboutmeComponent
+                aboutme_component_1.AboutmeComponent,
+                resume_component_1.ResumeComponent,
+                form_component_1.FormComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
@@ -194,6 +198,56 @@ exports.AppModule = AppModule;
 
 /***/ }),
 
+/***/ "./src/app/form/form.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/form/form.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  form works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/form/form.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var FormComponent = /** @class */ (function () {
+    function FormComponent() {
+    }
+    FormComponent.prototype.ngOnInit = function () {
+    };
+    FormComponent = __decorate([
+        core_1.Component({
+            selector: 'app-form',
+            template: __webpack_require__("./src/app/form/form.component.html"),
+            styles: [__webpack_require__("./src/app/form/form.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FormComponent);
+    return FormComponent;
+}());
+exports.FormComponent = FormComponent;
+
+
+/***/ }),
+
 /***/ "./src/app/header/header.component.css":
 /***/ (function(module, exports) {
 
@@ -204,7 +258,7 @@ module.exports = ".jumbotron {\n  background-attachment: fixed;\n  min-height: 1
 /***/ "./src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron\">\n  <div class=\"text-center project-referal\">\n    <div class=\"title text-center\">John Haven Bradley</div>\n    <div class=\"subtitle\"><p>Fullstack Web and Mobile App Developer</p></div>\n    <!-- <div class=\"logo\"></div> -->\n  </div>\n</div>"
+module.exports = "<div class=\"jumbotron\">\n  <div class=\"text-center project-referal\">\n    <div class=\"title text-center\">John Haven Bradley</div>\n    <div class=\"subtitle\"><p>Freelance Web and Mobile App Developer</p></div>\n    <!-- <div class=\"logo\"></div> -->\n  </div>\n</div>"
 
 /***/ }),
 
@@ -278,6 +332,56 @@ var HttpService = /** @class */ (function () {
 }());
 exports.HttpService = HttpService;
 ;
+
+
+/***/ }),
+
+/***/ "./src/app/resume/resume.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/resume/resume.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  resume works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/resume/resume.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var ResumeComponent = /** @class */ (function () {
+    function ResumeComponent() {
+    }
+    ResumeComponent.prototype.ngOnInit = function () {
+    };
+    ResumeComponent = __decorate([
+        core_1.Component({
+            selector: 'app-resume',
+            template: __webpack_require__("./src/app/resume/resume.component.html"),
+            styles: [__webpack_require__("./src/app/resume/resume.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ResumeComponent);
+    return ResumeComponent;
+}());
+exports.ResumeComponent = ResumeComponent;
 
 
 /***/ }),
