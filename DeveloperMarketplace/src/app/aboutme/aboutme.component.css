@@ -1,0 +1,23 @@
+.main-header {
+    background-image: url('../../assets/CPUBackground.jpg');
+    height: 500px;
+    background-size: cover;
+    background-size: auto contain;
+    position: top center;
+    background-attachment: fixed;
+    /* background: no-repeat; */
+    /* z-index: 3; */
+}
+.logo {
+    min-height: 300px; 
+    min-width: 300px;
+    background-image: url('../../assets/300Logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -15px;
+    top: 50%;
+  }
+.content {
+    background-color: #b8b8b8;
+    background-size: cover;
+}
