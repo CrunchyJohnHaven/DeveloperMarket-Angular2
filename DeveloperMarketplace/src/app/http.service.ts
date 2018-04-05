@@ -5,7 +5,12 @@ import { HttpClient } from '@angular/common/http'
 
 @Injectable()
 export class HttpService {
-  errors = {}
-  constructor(private _http: HttpClient) { }
+  private userInfo = {
+    githubAccount: "https://github.com/CrunchyJohnHaven"
+  };
+  getUserInfo(){
+    return this.userInfo;
+  }
+  // constructor(private _http: HttpClient) { }
   
 };

@@ -27,7 +27,7 @@ module.exports = ".main-header {\n    background-image: url('CPUBackground.551bb
 /***/ "./src/app/aboutme/aboutme.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "  <header class=\"main-header\">\n      <div class=\"logo\"></div>\n  </header>\n\n<div class=\"about-me\">\n  <div class=\"pic2\"></div>\n  <div class=\"content\">\n      <section class=\"section-dark\">\n          <article class=\"my-story\">\n            <h1>Hi, I'm John</h1>\n            <hr>\n            <p>I'm a software engineer and freelance web and mobile app developer passionate about building sophisticated yet accessible programs to meet the needs of the end user. Through obtaining a bachelors in literature, a degree in military science at Georgetown, and serving as a Army engineer and an Army Ranger for four years, I gained extensive analytical and project management skills, and an ability to solve technical challenges with precision. Having studied software engineering both academically and as an obsession, I left the military and moved to Silicon Valley to practice development at the highest level. If you need a developer for your project, I would love to hear about it.</p>\n            <hr>\n          </article>\n      </section>\n  </div>\n</div>\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\n    <!-- <div class=\"row center\">\n        <div class=\"col m3 s6 btn_links\">\n          <a class=\"btn-floating waves-light\" href=\"www.TheAmericanElement.com\" target=\"blank\"></a>\n        </div>\n      </div> -->"
+module.exports = "  <header class=\"main-header\">\n      <div class=\"logo\"></div>\n  </header>\n\n<div class=\"about-me\">\n  <div class=\"pic2\"></div>\n  <div class=\"content\">\n      <section class=\"section-dark\">\n          <article class=\"my-story\">\n            <h1>Hi, I'm John</h1>\n            <hr>\n            <p>I'm a software engineer and freelance web and mobile app developer passionate about building sophisticated yet accessible programs to meet the needs of the end user. Through obtaining a bachelors in literature, a degree in military science at Georgetown, and serving as a Army engineer and an Army Ranger for four years, I gained extensive analytical and project management skills, and an ability to solve technical challenges with precision. Having studied software engineering both academically and as an obsession, I left the military and moved to Silicon Valley to practice development at the highest level. If you need a developer for your project, I would love to hear about it.</p>\n            <hr>\n          </article>\n          <div class=\"row center\">\n              <div class=\"col m3 s6 btn_links\">\n                <a [href]=\"userInfo['githubAccount']\" class=\"btn btn-primary\" target=\"_blank\">See project on Github</a>              </div>\n          </div>\n      </section>\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -53,6 +53,7 @@ var AboutmeComponent = /** @class */ (function () {
         this._httpService = _httpService;
     }
     AboutmeComponent.prototype.ngOnInit = function () {
+        this.userInfo = this._httpService.getUserInfo();
     };
     AboutmeComponent = __decorate([
         core_1.Component({
@@ -207,7 +208,7 @@ module.exports = ".container {\n    margin: 0 auto;\n    max-width: 1280px;\n}\n
 /***/ "./src/app/form/form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" id=\"about-section\">\n  <div class=\"section\">\n    <div class=\"row\">\n      <div class=\"col m4 s12 center\">\n        <br>\n      </div>\n      <div class=\"col m8 s12\">\n        <h5>About Me</h5>\n        <p class=\"justify\">\n          I come to \n        </p>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\" id=\"about-section\">\n  <div class=\"section\">\n    <div class=\"row\">\n      <div class=\"col m4 s12 center\">\n        <br>\n      </div>\n      <div class=\"col m8 s12\">\n        <h5>About Me</h5>\n        <p class=\"justify\">\n        </p>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -313,21 +314,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log('********* HTTP **********');
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var HttpService = /** @class */ (function () {
-    function HttpService(_http) {
-        this._http = _http;
-        this.errors = {};
+    function HttpService() {
+        this.userInfo = {
+            githubAccount: "https://github.com/CrunchyJohnHaven"
+        };
+        // constructor(private _http: HttpClient) { }
     }
+    HttpService.prototype.getUserInfo = function () {
+        return this.userInfo;
+    };
     HttpService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.HttpClient])
+        core_1.Injectable()
     ], HttpService);
     return HttpService;
 }());
