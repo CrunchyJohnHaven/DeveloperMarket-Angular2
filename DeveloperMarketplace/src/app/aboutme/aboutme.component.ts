@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
-// import { ng2Parallax  } from '<pathTo>/ng2-parallax/parallax.directive';
 
 @Component({
   selector: 'app-aboutme',
-  // directives: [ng2Parallax],
   templateUrl: './aboutme.component.html',
   // template:`
   

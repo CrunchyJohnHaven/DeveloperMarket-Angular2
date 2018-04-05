@@ -1,0 +1,29 @@
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+.row {
+    margin-top: 0px;
+}
+.justify {
+    text-align: justify
+}
+p {
+    line-height: 2rem;
+}
+h5 {
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin-top: 0.82rem; 
+    margin-right:0px;
+    margin-bottom:0.656rem; 
+    margin-left: 0px;
+}

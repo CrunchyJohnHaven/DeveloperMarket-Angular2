@@ -1,0 +1,30 @@
+.jumbotron {
+    background-attachment: fixed;
+    min-height: 390px;
+    margin-bottom: 0px;
+    background-image: url('../../assets/CPUBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    grey: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+  }
+  
+  .title {
+    color: #feff00;
+    font-style: italic;
+    font-family: cursive;
+    font-size: 50px;
+    padding-top: 120px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+  }
+  .logo {
+    min-height: 300px; 
+    min-width: 300px;
+    background-image: url('../../assets/300Logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -15px;
+    top: 50%;
+  }
