@@ -4,7 +4,18 @@
     background-size: cover;
 }
 
-
+.section {
+    background-color: lightblue;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+.row {
+    margin-top: 0px;
+}
 
 
 
