@@ -6,8 +6,6 @@
     position: top center;
     background-attachment: fixed;
     min-height: 300px;
-    /* background: no-repeat; */
-    /* z-index: 3; */
 }
 .logo {
     min-height: 490px; 
