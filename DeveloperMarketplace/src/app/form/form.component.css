@@ -1,51 +1,93 @@
+.section {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+ul {
+    list-style-type: none;
+}
+.row {
+    margin-top: 0px;
+}
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-right: 0.75rem;
+    padding-bottom: 0px; 
+    padding-left: 0.75rem;
+    min-height: 1px; 
+}
+.row .col.m4 {
+    width: 33.33333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+
 .resume-container {
-    background-color: grey;
+    background-color: white;
     min-height: 350px;
     background-size: cover;
 }
 
+
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+h5 { 
+    color: black;
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin-top: 0.82rem;
+    margin-right: 0px;
+    margin-bottom: 0.656rem;
+    margin-left: 0px;
+}
+.collection.with-header .collection-header {
+    border: 1px solid #fffd54;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: black;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.collection.with-header .collection-item {
+    line-height: 1.5rem;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.gold.accent-4 {
+    background-color: #fffd54; 
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
 .section {
-    background-color: lightblue;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 .container .row {
     margin-left: -0.75rem;
     margin-right: -0.75rem;
-}
-.row {
-    margin-top: 0px;
-}
-
-
-
-
-.container {
-    margin: 0 auto;
-    max-width: 1280px;
-}
-.section {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-.container .row {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-}
-.row {
-    margin-top: 0px;
-}
-.justify {
-    text-align: justify
 }
 p {
     line-height: 2rem;
 }
-h5 {
-    font-size: 1.64rem;
-    line-height: 110%;
-    margin-top: 0.82rem; 
-    margin-right:0px;
-    margin-bottom:0.656rem; 
-    margin-left: 0px;
+
+.center {
+    text-align: center;
+}
+html {
+    font-size: 15px;
+    font-family: "Roboto", sans-sarif;
+    font-weight: normal;
+    color: black;
 }
