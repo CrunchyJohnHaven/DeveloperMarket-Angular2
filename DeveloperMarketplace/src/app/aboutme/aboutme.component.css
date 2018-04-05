@@ -67,6 +67,51 @@ div p {
 article {
     margin-top: 0px;
 }
-
-
+.githubIcon {
+    display: inline-block;
+    min-height: 32px;
+    min-width: 32px;
+    background-image: url('../../assets/githubIcon.ico');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.linkedInIcon {
+    display: inline-block;
+    min-height: 32px;
+    min-width: 32px;
+    background-image: url('../../assets/linkedIn.ico');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.blogIcon {
+    display: inline-block;
+    min-height: 32px;
+    min-width: 32px;
+    background-image: url('../../assets/blogIcon.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.emailIcon {
+    display: inline-block;
+    min-height: 32px;
+    min-width: 32px;
+    background-image: url('../../assets/emailIcon.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.icon-text {
+    margin-top: 32px;
+}
 

@@ -14,7 +14,19 @@
           </article>
           <div class="row center">
               <div class="col m3 s6 btn_links">
-                <a [href]="userInfo['githubAccount']" class="btn btn-primary" target="_blank">See project on Github</a>              </div>
+                  <div class="githubIcon"><br>
+                    <a [href]="userInfo['githubAccount']" class="icon-github" target="_blank"><br><br>Go To My Github</a>
+                  </div>
+                  <div class="linkedInIcon"><br>
+                    <a [href]="userInfo['linkedIn']" class="icon-linkedIn" target="_blank"><br><br>Go To My LinkedIn</a>
+                  </div>
+                  <div class="blogIcon"><br>
+                    <a [href]="userInfo['AmericanElement']" class="icon-blog" target="_blank"><br><br>Go To My Blog/Podcast</a>
+                  </div>
+                  <div class="emailIcon"><br>
+                    <a [href]="userInfo['Email']" class="icon-email" target="_blank"><br><br>Send Me An Email</a>
+                  </div>                    
+          </div>
           </div>
       </section>
   </div>
