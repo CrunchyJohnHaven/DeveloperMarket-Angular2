@@ -9,13 +9,13 @@ import { HttpService } from '../http.service';
 })
 export class FormComponent implements OnInit {
   newContact: any;
-
+  
   
   constructor(private _httpService: HttpService) {this.newContact = {firstName: '', lastName: 
 ''} }
 
   ngOnInit() {
-    this.newContact = this.newContact
+
     console.log("onInit")
     console.log("newContact: ", this._httpService.newContact)
   }
