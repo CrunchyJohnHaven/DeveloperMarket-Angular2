@@ -5,7 +5,6 @@
     background-image: url('../../assets/CPUBackground.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    grey: white;
     text-shadow: black 0.3em 0.3em 0.3em;
   }
 .logo {
@@ -29,3 +28,15 @@
     border-bottom-color: rgba(255,255,255,0.35);
     display: inline-block;
   }
+  .email-icon {
+    background-image: url('../../assets/emailIcon.png');
+    background-position: center;
+    height: 48px;
+    width: 48px;
+    margin-top: 1%;
+    margin-left: 50%;
+  }
+  .center {
+    text-align: center;
+     
+}
