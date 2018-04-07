@@ -11,8 +11,8 @@ export class FormComponent implements OnInit {
   newContact: any;
   
   
-  constructor(private _httpService: HttpService) {this.newContact = {firstName: '', lastName: 
-''} }
+  constructor(private _httpService: HttpService) {this.newContact = {firstName: 'John', lastName: 
+'Bradley'} }
 
   ngOnInit() {
 
