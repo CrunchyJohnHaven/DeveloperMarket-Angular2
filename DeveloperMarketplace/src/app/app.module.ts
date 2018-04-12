@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ResumeComponent } from './resume/resume.component';
 import { FormComponent } from './form/form.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormComponent } from './form/form.component';
     AboutmeComponent,
     ResumeComponent,
     FormComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
